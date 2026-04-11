@@ -6,7 +6,6 @@
 using namespace std;
 using namespace func;
 
-
 REGISTER("Case",Case)
 
 int main() {

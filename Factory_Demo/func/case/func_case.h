@@ -2,6 +2,7 @@
 #define FUNC_CASE_H
 
 #include "func_base.h"
+
 namespace func {
 struct Case : public Base {
 
@@ -15,6 +16,4 @@ int b_ = 0;
 
 } // namespace func
 
-
-
-#endif // FUNC_Case_H
+#endif // FUNC_CASE_H
