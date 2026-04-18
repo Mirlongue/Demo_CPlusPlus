@@ -4,6 +4,7 @@
 #include <string>
 #include <memory>
 #include <map>
+#include <mutex>
 #include "func_base.h"
 
 namespace func {
@@ -21,7 +22,8 @@ std::shared_ptr<Base> Create(std::string, int, int);
 
 void Register(std::string, Allocater);
 
-std::map<std::string, Allocater> funcMap;
+std::map<std::string, Allocater> funcMap_;
+std::mutex mtx_;
 
 };
 

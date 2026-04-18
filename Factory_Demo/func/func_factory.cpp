@@ -3,7 +3,7 @@
 namespace func {
 
 Factory::~Factory() {
-    funcMap.clear();
+    funcMap_.clear();
 }
 
 Factory & Factory::GetInstance() {
@@ -12,17 +12,19 @@ Factory & Factory::GetInstance() {
 }
 
 std::shared_ptr<Base> Factory::Create(std::string name, int a, int b) {
-    std::map<std::string, Allocater>::iterator it = funcMap.find(name);
-    if(it == funcMap.end()) {
+    std::lock_guard<std::mutex> lock(mtx_);
+    std::map<std::string, Allocater>::iterator it = funcMap_.find(name);
+    if(it == funcMap_.end()) {
         return nullptr;
     }
     return (it->second)(a, b);
 }
 
 void Factory::Register(std::string name, Allocater allocater) {
-    std::map<std::string, Allocater>::iterator it = funcMap.find(name);
-    if(it == funcMap.end()) {
-        funcMap[name] = allocater;
+    std::lock_guard<std::mutex> lock(mtx_);
+    std::map<std::string, Allocater>::iterator it = funcMap_.find(name);
+    if(it == funcMap_.end()) {
+        funcMap_[name] = allocater;
     }
     return;
 }
