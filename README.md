@@ -42,6 +42,12 @@ mark connection:	  ##
 ./Factory_Demo
 ```
 
+## stdexec
+
+```
+./Stdexec_Demo
+```
+
 ## template
 
 ```c++
