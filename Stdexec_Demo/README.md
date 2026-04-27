@@ -12,6 +12,6 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
-./demo.exe
+demo.exe
 ```
 

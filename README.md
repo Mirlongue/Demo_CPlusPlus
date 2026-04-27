@@ -20,7 +20,7 @@ alias
 
 simplify complex types
 
-â€‹	starting from the variable name, proceed from right to left
+â€?	starting from the variable name, proceed from right to left
 
 ## using
 
@@ -42,7 +42,7 @@ mark connection:	  ##
 ./Factory_Demo
 ```
 
-## stdexec
+## stdexec demo
 
 ```
 ./Stdexec_Demo
