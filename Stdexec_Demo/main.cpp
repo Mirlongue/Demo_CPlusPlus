@@ -1,5 +1,18 @@
 #include <stdexec/execution.hpp>
 #include <exec/static_thread_pool.hpp>
+#include <exec/task.hpp>
+#include <iostream>
+
+exec::task<int> ret() {
+    co_return 1;
+}
+
+exec::task<void> print() {
+    std::cout << "hellow world!" << std::endl;
+    int x = co_await ret();
+    std::cout << "x : " << x << std::endl;
+    co_return;
+}
 
 int main()
 {
@@ -25,6 +38,8 @@ int main()
 
     // Launch the work and wait for the result
     auto [i, j, k] = stdexec::sync_wait(std::move(work)).value();
+
+    stdexec::sync_wait(print());
 
     // Prints "0 1 4":
     std::printf("%d %d %d\n", i, j, k);
