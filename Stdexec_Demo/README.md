@@ -10,7 +10,7 @@ cd /d <Stdexec_Demo path>
 dir
 mkdir build
 cd build
-cmake .. # RAPIDS.cmake may download failed. try more
+cmake ..
 cmake --build .
 ./demo.exe
 ```

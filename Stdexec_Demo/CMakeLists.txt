@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.29)
 
 project(demo)
 
-# build_bak
+# copy build_bak/* to build/  for use local cache
 # set(FETCHCONTENT_FULLY_DISCONNECTED ON)
 
 add_subdirectory(stdexec)
