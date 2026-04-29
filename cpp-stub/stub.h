@@ -219,7 +219,7 @@
     // https://maskray.me/blog/2023-02-26-linker-notes-on-power-isa
     // https://llvm.org/devmtg/2014-04/PDFs/Talks/Euro-LLVM-2014-Weigand.pdf
     // PowerPC64 LE (ELFv2 ABI) - LEP
-    // readelf -h test_function ï¼š Flags:  0x2, abiv2
+    // readelf -h test_function ï¼? Flags:  0x2, abiv2
     #define CODESIZE 28U
     #define CODESIZE_MIN 28U
     #define CODESIZE_MAX CODESIZE
@@ -529,7 +529,7 @@ public:
         
         return;
     }
-private:
+protected:
     void *pageof(unsigned char* addr)
     { 
 #ifdef _WIN32
@@ -561,7 +561,7 @@ private:
         return false;
     }
 
-private:
+protected:
 #ifdef _WIN32
     //LLP64
     long long m_pagesize;

@@ -2,7 +2,7 @@
 
 install `Visual Studio Community 2026`
 
-![](./img/Visual_Studio.png)
+![](./img/visual_studio.png)
 
 open    `x64 Native Tools Command Prompt for VS`
 
@@ -11,7 +11,7 @@ cd /d <Stdexec_Demo path>
 dir
 mkdir build
 cd build
-cmake ..
+cmake .. # If the download fails, open CMakeLists.txt and follow the instructions in the comments.
 cmake --build .
 demo.exe
 ```
