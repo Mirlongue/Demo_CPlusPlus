@@ -1,3 +1,5 @@
+## [stdexec](https://github.com/Mirlongue/stdexec)
+
 install `Visual Studio Community 2026`
 
 ![](./img/Visual_Studio.png)
@@ -13,4 +15,3 @@ cmake ..
 cmake --build .
 demo.exe
 ```
-
