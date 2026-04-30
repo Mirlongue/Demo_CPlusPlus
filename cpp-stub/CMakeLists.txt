@@ -4,6 +4,7 @@ project(demo)
 
 add_executable(demo
     main.cpp
-    sub/cas_0.cpp)
+    sub/cas_00.cpp
+    sub/cas_01.cpp)
 
 target_compile_options(demo PRIVATE -fno-inline -fno-access-control)
