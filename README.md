@@ -1,6 +1,6 @@
 ## [cpp-stub](https://github.com/coolxv/cpp-stub)
 
-## factory
+## trick
 
 ## [stdexec](https://github.com/NVIDIA/stdexec)
 

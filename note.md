@@ -17,8 +17,7 @@ member functions, functions belong to the class itself
 alias
 
 simplify complex types
-
-​	starting from the variable name, proceed from right to left
+  starting from the variable name, proceed from right to left
 
 ## using
 
