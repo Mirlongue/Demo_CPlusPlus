@@ -1,9 +1,9 @@
-#include <iostream>
+#include "cas.h"
 
 using namespace std;
+using namespace cas;
 
 int main() {
-
-    cout << "hello world" << endl;
+    print();
     return 0;
 }
