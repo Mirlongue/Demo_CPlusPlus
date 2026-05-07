@@ -5,9 +5,8 @@ using namespace std;
 
 namespace cas {
 
-// template void Swap<double>(double &, double &);
+typedef int Tp; // int double float
 
-typedef double Tp;
 
 void cas_0() {
     Tp x(1);
@@ -15,7 +14,6 @@ void cas_0() {
     cout << x << " " << y << endl;
     Swap(x,y);
     cout << x << " " << y << endl;
-    bak();
 
 }
 

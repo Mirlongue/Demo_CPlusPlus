@@ -9,6 +9,7 @@ void Swap(T &a, T &b) {
     T c = a; a = b; b = c;
     std::cout << "template" << std::endl;
 }
+
 // explicit concretion
 template <> void Swap<int>(int & a, int & b) {
     int c = a; a = b; b = c;
@@ -18,17 +19,6 @@ template <> void Swap<int>(int & a, int & b) {
 
 // explicit instantiation
 template void Swap<double>(double &, double &);
-
-typedef double Tp;
-
-void bak() {
-    Tp x(1);
-    Tp y(2);
-    cout << "bak" << endl;
-    cout << x << " " << y << endl;
-    Swap(x,y);
-    cout << x << " " << y << endl;
-}
-
+// template void Swap<float>(float &, float &);
 
 }
