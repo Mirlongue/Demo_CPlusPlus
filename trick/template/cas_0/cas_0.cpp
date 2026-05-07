@@ -5,6 +5,8 @@ using namespace std;
 
 namespace cas {
 
+// template void Swap<double>(double &, double &);
+
 typedef double Tp;
 
 void cas_0() {

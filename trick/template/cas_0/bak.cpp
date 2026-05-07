@@ -4,6 +4,11 @@
 using namespace std;
 
 namespace cas {
+template <typename T>
+void Swap(T &a, T &b) {
+    T c = a; a = b; b = c;
+    std::cout << "template" << std::endl;
+}
 // explicit concretion
 template <> void Swap<int>(int & a, int & b) {
     int c = a; a = b; b = c;
@@ -12,7 +17,7 @@ template <> void Swap<int>(int & a, int & b) {
 }
 
 // explicit instantiation
-// template void Swap<double>(double &, double &);
+template void Swap<double>(double &, double &);
 
 typedef double Tp;
 
