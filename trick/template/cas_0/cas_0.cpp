@@ -5,7 +5,7 @@ using namespace std;
 
 namespace cas {
 
-typedef int Tp;
+typedef double Tp;
 
 void cas_0() {
     Tp x(1);
