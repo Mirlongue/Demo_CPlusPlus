@@ -4,7 +4,7 @@
 #include <iostream>
 
 namespace cas {
-    void print();
+    void cas_0();
 
 }
 

@@ -51,7 +51,7 @@ template <> void Swap(int &, int &) {
 }
 
 // explicit instantiation
-template void Swap<int>(int, int);
+template void Swap<int>(int &, int &);
 ```
 
 

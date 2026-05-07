@@ -5,8 +5,15 @@ using namespace std;
 
 namespace cas {
 
-void print() {
-    cout << "hello world" << endl;
+typedef int Tp;
+
+void cas_0() {
+    Tp x(1);
+    Tp y(2);
+    cout << x << " " << y << endl;
+    Swap(x,y);
+    cout << x << " " << y << endl;
+    bak();
 
 }
 

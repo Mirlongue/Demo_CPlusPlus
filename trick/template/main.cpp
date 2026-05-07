@@ -1,9 +1,9 @@
-#include "cas.h"
+#include "main.h"
 
 using namespace std;
 using namespace cas;
 
 int main() {
-    print();
+    cas_0();
     return 0;
 }
