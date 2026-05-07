@@ -4,7 +4,7 @@ project(demo)
 add_executable(demo
      main.cpp
      cas_0/cas_0.cpp
-     cas_0/bak.cpp)
+     cas_0/template.cpp)
 
 target_include_directories(demo PUBLIC
      ${CMAKE_CURRENT_SOURCE_DIR}/cas_0
