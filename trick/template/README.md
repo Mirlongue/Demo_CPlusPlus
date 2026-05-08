@@ -23,3 +23,4 @@ return value type
 
 ### cas_2
 
+specialized extraction
