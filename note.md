@@ -35,24 +35,7 @@ mark connection:	  ##
 
 ## template
 
-```c++
-template <typename T>
-void Swap(T &a, T &b) {
-    T c = a; a = b; b = c;
-}
 
-// explicit concretion
-template <> void Swap<int>(int &, int &) {
-    int c = a; a = b; b = c;
-}
-
-template <> void Swap(int &, int &) {
-    int c = a; a = b; b = c;
-}
-
-// explicit instantiation
-template void Swap<int>(int &, int &);
-```
 
 
 ```c++

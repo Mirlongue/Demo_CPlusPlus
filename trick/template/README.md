@@ -1,0 +1,21 @@
+## template
+
+```shell
+mkdir build
+cd build
+cmake ../ -G Ninja
+cmake --build .
+./demo.exe
+```
+
+### cas_0
+
+**template functions** do not generate functions while **explicit concretion** & **explicit instantiation**
+
+`trick\template\cas_0\cas_0.cpp:8` 
+set `int` explicit concretion
+set `double` explicit instantiation
+set `float`  failure case
+
+### cas_1
+

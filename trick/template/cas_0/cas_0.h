@@ -4,8 +4,6 @@
 #include <iostream>
 namespace cas {
 
-void bak();
-
 template <typename T> void Swap(T &a, T &b);
 
 }
