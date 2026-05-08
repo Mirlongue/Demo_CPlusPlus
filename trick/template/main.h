@@ -1,11 +1,9 @@
-#ifndef CAS_H
-#define CAS_H
+#pragma once
 
 #include <iostream>
 
 namespace cas {
     void cas_0();
+    void cas_1();
 
 }
-
-#endif // CAS_H
