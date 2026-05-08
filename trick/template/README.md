@@ -19,3 +19,7 @@ set `float`  failure case
 
 ### cas_1
 
+return value type
+
+### cas_2
+

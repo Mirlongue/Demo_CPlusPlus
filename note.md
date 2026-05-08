@@ -37,30 +37,6 @@ mark connection:	  ##
 
 
 
-
-```c++
-template <typename T>
-struct Iter {
-    typedef T value_type;
-    Iter(T x) : x_(x) {}
-    T & Get() {
-        return x_;
-    }
-    T x_;
-};
-
-template <typename T>
-typename T::value_type Get(T ite) {
-    return ite.Get();
-}
-
-Iter<int> ite(1);
-std::cout << Get<Iter<int>>(ite) << std::endl;
-
-Iter ite(1);
-std::cout << Get(ite) << std::endl;
-```
-
 ```c++
 struct Tru {};
 struct Fal {};
