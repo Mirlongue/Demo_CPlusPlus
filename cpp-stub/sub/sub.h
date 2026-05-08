@@ -10,6 +10,7 @@ namespace sub {
     int cas_2();
     int cas_3();
     int cas_4();
+    int cas_5();
 
 }
 
